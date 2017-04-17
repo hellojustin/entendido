@@ -2,6 +2,7 @@
   "name": "entendido",
   "version": "0.0.0",
   "description": "",
+  "repository": "git remote add origin git@github.com:hellojustin/entendido.git",
   "main": "index.js",
   "scripts": {
     "test": "mocha spec/**/*_spec.js",
