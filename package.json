@@ -6,12 +6,13 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha spec/**/*_spec.js",
-    "generate": "antlr4 -Dlanguage=JavaScript -o generated Time.g4"
+    "generate": "antlr4 -Dlanguage=JavaScript -o generated Task.g4"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "antlr4": "^4.7.0",
+    "bdd-lazy-var": "^1.2.1",
     "chai": "^3.5.0",
     "mocha": "^3.2.0",
     "sinon": "^2.1.0"

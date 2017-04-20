@@ -1,4 +1,4 @@
-grammar Time;
+grammar Task;
 
 times
   : (time)+
@@ -9,9 +9,9 @@ time
   ;
 
 absoluteTime
-  : hour TIME_SEPARATOR minute (ampm)?
+  : hour TIME_SEPARATOR minute (am|pm)?
   | hour TIME_SEPARATOR minute
-  | hour (ampm)?
+  | hour (am|pm)?
   | hour
   ;
 
@@ -23,12 +23,15 @@ minute
   : WHOLE_NUMBER
   ;
 
-ampm
+am
   : 'a'
   | 'A'
   | 'am'
   | 'AM'
-  | 'p'
+  ;
+
+pm
+  : 'p'
   | 'P'
   | 'pm'
   | 'PM'
